@@ -1,0 +1,11 @@
+---
+- hosts: all
+  tasks:
+    - name: Send notification message via {{ inventory_hostname }}
+      mattermost:
+        url: "{{ mattermost_url }}"
+        api_key: "{{ api_key }}"
+        channel: "{{ channel }}"
+        username: "bot"
+        text: "{{ message }}"
+        validate_certs: no
