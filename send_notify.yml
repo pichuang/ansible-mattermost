@@ -3,7 +3,7 @@
   tasks:
     - name: Send notification message via {{ inventory_hostname }}
       mattermost:
-        url: "{{ mattermost_url }}"
+        url: "http://mattermost.pichuang.local"
         api_key: "{{ api_key }}"
         channel: "{{ channel }}"
         username: "bot"

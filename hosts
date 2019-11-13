@@ -2,7 +2,6 @@
 tower.pichuang.local ansible_connection=ssh ansible_host=192.168.77.21
 
 [chat:vars]
-mattermost_url="http://mattermost.pichuang.local"
 api_key="mx16ywwx5b87xpw8f1ncpg4hrc"
 channel="test-zone"
 message="testing"
